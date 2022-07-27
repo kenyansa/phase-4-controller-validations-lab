@@ -6,7 +6,7 @@ class AuthorsController < ApplicationController
     render json: author
   end
 
-  #POST /author 
+  #POST /author  well done
   def create
     author = Author.create!(author_params)
     render json: author, status: :created
